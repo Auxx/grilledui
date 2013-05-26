@@ -11,6 +11,7 @@ import android.view.View;
 
 import com.grilledmonkey.grilledui.adapters.SectionAdapter;
 import com.grilledmonkey.grilledui.listener.TabChangeListener;
+import com.grilledmonkey.grilledui.xml.XmlSectionReader;
 
 /**
  * TabActivity implements navigation with tabs in a simple way. Descendants
@@ -24,7 +25,7 @@ import com.grilledmonkey.grilledui.listener.TabChangeListener;
  * Tabs are populated with createSectionAdapter() method. It is called in
  * initTabs(), so if you have fixed tabs ready at the start, then override
  * createSectionAdapter() and return populated {@link SectionAdapter}. You may
- * use SectionAdapter static method fromXml() to create adapter and
+ * use {@link XmlSectionReader} to create adapter and
  * populate it with data in XML file.
  * <p/>
  * You can also get current SectionAdapter from getSectionAdapter() and use it
@@ -126,7 +127,7 @@ public class TabActivity extends FragmentActivity implements ActionBar.TabListen
 	 * populate tabs statically, then override this method.
 	 * <p/>
 	 * You may want to populate tabs from XML, just return the result of
-	 * static method SectionAdapter.fromXml() when overriding.
+	 * static method XmlSectionReader.load() when overriding.
 	 * 
 	 * @param fm
 	 * @return SectionAdapter with tabs
