@@ -1,12 +1,8 @@
 package com.grilledmonkey.grilledui.adapters;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
-
-import org.xmlpull.v1.XmlPullParser;
-import org.xmlpull.v1.XmlPullParserException;
 
 import android.app.ActionBar;
 import android.app.ActionBar.Tab;
@@ -15,13 +11,14 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
 import com.grilledmonkey.grilledui.TabActivity;
+import com.grilledmonkey.grilledui.xml.XmlSectionReader;
 
 /**
  * This is adapter for {@link TabActivity} tabs. It stores and manages tabs,
  * handles their integration with ViewPager and so on. Methods are self
  * explaining.
  * <p/>
- * You can use fromXml() method to generate new adapter populated with tabs
+ * You can use {@link XmlSectionReader} to generate new adapter populated with tabs
  * from XML resource.
  * 
  * @author Aux
@@ -80,42 +77,4 @@ public class SectionAdapter extends FragmentPagerAdapter {
 		return(sections.size());
 	}
 
-	public static SectionAdapter fromXmlSilent(FragmentManager fm, ActionBar actionBar, ActionBar.TabListener tabListener, XmlPullParser xml) {
-		SectionAdapter adapter;
-		try {
-			adapter = fromXml(fm, actionBar, tabListener, xml);
-		}
-		catch(Exception e) {
-			adapter = new SectionAdapter(fm, actionBar, tabListener);
-		}
-		return(adapter);
-	}
-
-	// TODO Implement!
-	public static SectionAdapter fromXml(FragmentManager fm, ActionBar actionBar, ActionBar.TabListener tabListener, XmlPullParser xml) throws XmlPullParserException, IOException {
-		SectionAdapter adapter = new SectionAdapter(fm, actionBar, tabListener);
-
-		int eventType = xml.getEventType();
-		// TODO Refactor this cycle into method call
-		while(eventType != XmlPullParser.END_DOCUMENT) {
-			if(eventType == XmlPullParser.START_TAG) {
-				switch(xml.getDepth()) {
-					case 1:
-						// TODO Stop the cycle if top-level tag is not "sections"
-						break;
-					case 2:
-						if("section".equals(xml.getName())) {
-							String title = xml.getAttributeValue(null, "title");
-							String fragment = xml.getAttributeValue(null, "fragment");
-							// TODO Add title parser so that strings from resources may be used
-							// TODO Add fragment parser
-						}
-						break;
-				}
-			}
-			eventType = xml.next();
-		}
-
-		return(adapter);
-	}
 }
