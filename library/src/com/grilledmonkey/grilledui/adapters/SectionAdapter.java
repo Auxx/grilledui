@@ -6,9 +6,11 @@ import java.util.Locale;
 
 import android.app.ActionBar;
 import android.app.ActionBar.Tab;
+import android.content.Context;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+import android.widget.ArrayAdapter;
 
 import com.grilledmonkey.grilledui.TabActivity;
 import com.grilledmonkey.grilledui.xml.XmlSectionReader;
@@ -26,9 +28,27 @@ import com.grilledmonkey.grilledui.xml.XmlSectionReader;
  */
 public class SectionAdapter extends FragmentPagerAdapter {
 	private final List<Fragment> sections = new ArrayList<Fragment>();
+	private final List<String> titles = new ArrayList<String>();
 	private final ActionBar actionBar;
 	private final ActionBar.TabListener tabListener;
+	private ArrayAdapter<String> arrayAdapter = null;
 
+	/**
+	 * This constructor should be used when not using tabs.
+	 * 
+	 * @param fm FragmentManager as required by FragmentPagerAdapter
+	 */
+	public SectionAdapter(FragmentManager fm) {
+		this(fm, null, null);
+	}
+
+	/**
+	 * This constructor should be used when using tabs.
+	 * 
+	 * @param fm FragmentManager as required by FragmentPagerAdapter
+	 * @param actionBar ActionBar of current activity
+	 * @param tabListener object which will listen for tab events
+	 */
 	public SectionAdapter(FragmentManager fm, ActionBar actionBar, ActionBar.TabListener tabListener) {
 		super(fm);
 		this.actionBar = actionBar;
@@ -36,35 +56,69 @@ public class SectionAdapter extends FragmentPagerAdapter {
 	}
 
 	public SectionAdapter add(Fragment fragment, String title) {
+		String processedTitle = title.toUpperCase(Locale.getDefault());
+		titles.add(processedTitle);
 		sections.add(fragment);
-		actionBar.addTab(createTab(title));
+
+		if(actionBar != null) {
+			actionBar.addTab(createTab(processedTitle));
+		}
+
+		if(arrayAdapter != null) {
+			arrayAdapter.notifyDataSetChanged();
+		}
+
 		notifyDataSetChanged();
 		return(this);
 	}
 
 	public SectionAdapter add(int position, Fragment fragment, String title) {
+		String processedTitle = title.toUpperCase(Locale.getDefault());
+		titles.add(position, processedTitle);
 		sections.add(position, fragment);
-		actionBar.addTab(createTab(title), position);
+
+		if(actionBar != null) {
+			actionBar.addTab(createTab(processedTitle), position);
+		}
+
+		if(arrayAdapter != null) {
+			arrayAdapter.notifyDataSetChanged();
+		}
+
 		notifyDataSetChanged();
 		return(this);
 	}
 
 	private Tab createTab(String title) {
 		Tab tab = actionBar.newTab();
-		tab.setText(title.toUpperCase(Locale.getDefault()));
+		tab.setText(title);
 		tab.setTabListener(tabListener);
 		return(tab);
 	}
 
 	public Fragment remove(int position) {
-		actionBar.removeTabAt(position);
+		if(actionBar != null) {
+			actionBar.removeTabAt(position);
+		}
+
+		if(arrayAdapter != null) {
+			arrayAdapter.notifyDataSetChanged();
+		}
+
 		Fragment removed = sections.remove(position);
 		notifyDataSetChanged();
 		return(removed);
 	}
 
 	public Tab getTab(int position) {
-		return(actionBar.getTabAt(position));
+		return(actionBar != null ? actionBar.getTabAt(position) : null);
+	}
+
+	public ArrayAdapter<String> getArrayAdapter(Context context, int layoutId, int viewId) {
+		if(arrayAdapter == null) {
+			arrayAdapter = new ArrayAdapter<String>(context, layoutId, viewId, titles);
+		}
+		return(arrayAdapter);
 	}
 
 	@Override

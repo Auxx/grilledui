@@ -4,11 +4,11 @@ import android.app.ActionBar;
 import android.app.ActionBar.Tab;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.view.ViewPager;
 import android.view.View;
 
+import com.grilledmonkey.grilledui.abstracts.GrilledActivity;
 import com.grilledmonkey.grilledui.adapters.SectionAdapter;
 import com.grilledmonkey.grilledui.listener.TabChangeListener;
 import com.grilledmonkey.grilledui.xml.XmlSectionReader;
@@ -34,7 +34,7 @@ import com.grilledmonkey.grilledui.xml.XmlSectionReader;
  * @author Aux
  *
  */
-public class TabActivity extends FragmentActivity implements ActionBar.TabListener {
+public class TabActivity extends GrilledActivity implements ActionBar.TabListener {
 	private ActionBar actionBar;
 	private ViewPager pager;
 	private SectionAdapter sectionAdapter;
@@ -55,7 +55,7 @@ public class TabActivity extends FragmentActivity implements ActionBar.TabListen
 	 * reference GrilledUI in your project settings to use this form.
 	 */
 	public void initTabs() {
-		initGrill(R.layout.gui__activity_tab);
+		initTabs(R.layout.gui__activity_tab);
 	}
 
 	/**
@@ -71,7 +71,7 @@ public class TabActivity extends FragmentActivity implements ActionBar.TabListen
 	 * 
 	 * @param layout to be used with current activity
 	 */
-	public void initGrill(int layout) {
+	public void initTabs(int layout) {
 		setContentView(layout);
 		actionBar = getActionBar();
 		actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
@@ -95,17 +95,6 @@ public class TabActivity extends FragmentActivity implements ActionBar.TabListen
 	}
 
 	/**
-	 * This method is used to determine if tabbed navigation should be
-	 * automatically enabled in onCreate() method. If you plan to override
-	 * onCreate() and add some logic to determine what to load and show to user
-	 * or you want to use alternative layout, then override this method,
-	 * return FALSE and call initGrill() when needed.
-	 */
-	public boolean needsAutoInit() {
-		return(true);
-	}
-
-	/**
 	 * This method must be overridden when using alternative layout! It is used
 	 * to get correct ViewPager from layout.
 	 */
@@ -118,20 +107,12 @@ public class TabActivity extends FragmentActivity implements ActionBar.TabListen
 		return(pager);
 	}
 
+	@Override
 	public SectionAdapter getSectionAdapter() {
 		return(sectionAdapter);
 	}
 
-	/**
-	 * Returns new {@link SectionAdapter}, blank by default. If you want to
-	 * populate tabs statically, then override this method.
-	 * <p/>
-	 * You may want to populate tabs from XML, just return the result of
-	 * static method XmlSectionReader.load() when overriding.
-	 * 
-	 * @param fm
-	 * @return SectionAdapter with tabs
-	 */
+	@Override
 	public SectionAdapter createSectionAdapter(FragmentManager fm) {
 		return(new SectionAdapter(fm, actionBar, this));
 	}
