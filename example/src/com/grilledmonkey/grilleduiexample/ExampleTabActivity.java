@@ -18,4 +18,9 @@ public class ExampleTabActivity extends FragmentActivity {
 		startActivity(intent);
 	}
 
+	public void nextXmlActivity(View view) {
+		Intent intent = new Intent(this, TestXmlActivity.class);
+		startActivity(intent);
+	}
+
 }

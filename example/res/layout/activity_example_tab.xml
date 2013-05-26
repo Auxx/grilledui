@@ -11,4 +11,10 @@
 		android:layout_height="wrap_content"
 		android:onClick="nextActivity" />
 	
+	<Button
+		android:text="TabActivity from XML"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:onClick="nextXmlActivity" />
+	
 </LinearLayout>
