@@ -20,7 +20,7 @@ public class XmlSectionReader {
 	private static final String ROOT_TAG = "sections";
 	private static final String SECTION_TAG = "section";
 
-	private static final String NAME_ATTR = "name";
+	private static final String NAME_ATTR = "title";
 	private static final String FRAGMENT_ATTR = "fragment";
 
 	public static SectionAdapter loadSilent(FragmentManager fm, ActionBar actionBar, ActionBar.TabListener tabListener, Context context, int resId) {
