@@ -23,4 +23,9 @@ public class ExampleTabActivity extends FragmentActivity {
 		startActivity(intent);
 	}
 
+	public void nextSectionActivity(View view) {
+		Intent intent = new Intent(this, TestSectionActivity.class);
+		startActivity(intent);
+	}
+
 }

@@ -11,7 +11,7 @@
 
 	<fragment
 		android:id="@+id/section_list"
-		android:name="com.grilledmokey.mdflow.ItemListFragment"
+		android:name="com.grilledmonkey.grilledui.fragments.SectionListFragment"
 		android:layout_width="0dp"
 		android:layout_height="match_parent"
 		android:layout_weight="1"

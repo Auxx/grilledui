@@ -30,6 +30,10 @@
 		<activity
 			android:name="com.grilledmonkey.grilleduiexample.TestXmlActivity"
 			android:label="@string/app_name" />
+
+		<activity
+			android:name="com.grilledmonkey.grilleduiexample.TestSectionActivity"
+			android:label="@string/app_name" />
 	</application>
 
 </manifest>

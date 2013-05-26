@@ -57,8 +57,7 @@ public class SectionListFragment extends ListFragment {
 	@Override
 	public void onListItemClick(ListView listView, View view, int position, long id) {
 		super.onListItemClick(listView, view, position, id);
-		// TODO Need to notify activity here
-		//		callbacks.onItemSelected(position);
+		activity.onSectionSelected(position);
 	}
 
 	@Override

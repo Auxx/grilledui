@@ -56,12 +56,11 @@ public class SectionAdapter extends FragmentPagerAdapter {
 	}
 
 	public SectionAdapter add(Fragment fragment, String title) {
-		String processedTitle = title.toUpperCase(Locale.getDefault());
-		titles.add(processedTitle);
+		titles.add(title);
 		sections.add(fragment);
 
 		if(actionBar != null) {
-			actionBar.addTab(createTab(processedTitle));
+			actionBar.addTab(createTab(title));
 		}
 
 		if(arrayAdapter != null) {
@@ -73,12 +72,11 @@ public class SectionAdapter extends FragmentPagerAdapter {
 	}
 
 	public SectionAdapter add(int position, Fragment fragment, String title) {
-		String processedTitle = title.toUpperCase(Locale.getDefault());
-		titles.add(position, processedTitle);
+		titles.add(position, title);
 		sections.add(position, fragment);
 
 		if(actionBar != null) {
-			actionBar.addTab(createTab(processedTitle), position);
+			actionBar.addTab(createTab(title), position);
 		}
 
 		if(arrayAdapter != null) {
@@ -89,14 +87,20 @@ public class SectionAdapter extends FragmentPagerAdapter {
 		return(this);
 	}
 
+	public void changeTitle(String title) {
+		// TODO Implement!
+	}
+
 	private Tab createTab(String title) {
 		Tab tab = actionBar.newTab();
-		tab.setText(title);
+		tab.setText(title.toUpperCase(Locale.getDefault()));
 		tab.setTabListener(tabListener);
 		return(tab);
 	}
 
 	public Fragment remove(int position) {
+		titles.remove(position);
+
 		if(actionBar != null) {
 			actionBar.removeTabAt(position);
 		}

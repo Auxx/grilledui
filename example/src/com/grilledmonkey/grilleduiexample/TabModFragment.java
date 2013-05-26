@@ -9,12 +9,14 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 
+import com.grilledmonkey.grilledui.SectionActivity;
 import com.grilledmonkey.grilledui.TabActivity;
+import com.grilledmonkey.grilledui.abstracts.GrilledActivity;
 import com.grilledmonkey.grilledui.adapters.SectionAdapter;
 
 public class TabModFragment extends Fragment implements OnClickListener {
 	private int counter = 500;
-	private TabActivity activity = null;
+	private GrilledActivity activity = null;
 
 	public TabModFragment() {
 	}
@@ -31,8 +33,8 @@ public class TabModFragment extends Fragment implements OnClickListener {
 	@Override
 	public void onAttach(Activity activity) {
 		super.onAttach(activity);
-		if(activity instanceof TabActivity) {
-			this.activity = (TabActivity)activity;
+		if(activity instanceof GrilledActivity) {
+			this.activity = (GrilledActivity)activity;
 		}
 		else {
 			this.activity = null;
@@ -65,15 +67,20 @@ public class TabModFragment extends Fragment implements OnClickListener {
 
 			case R.id.button_change_tab:
 				if(activity != null) {
-					Tab tab = activity.getSectionAdapter().getTab(0);
-					CharSequence text = tab.getText();
-					if(text.charAt(text.length() - 1) == '*') {
-						text = text.subSequence(0, text.length() - 2);
+					if(activity instanceof TabActivity) {
+						Tab tab = activity.getSectionAdapter().getTab(0);
+						CharSequence text = tab.getText();
+						if(text.charAt(text.length() - 1) == '*') {
+							text = text.subSequence(0, text.length() - 2);
+						}
+						else {
+							text = text + " *";
+						}
+						tab.setText(text);
 					}
-					else {
-						text = text + " *";
+					else if(activity instanceof SectionActivity){
+						// TODO Implement! Should use SectionAdapter.changeTitle()
 					}
-					tab.setText(text);
 				}
 				break;
 		}
