@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
+import android.text.TextUtils;
+import android.util.Log;
 
 import com.grilledmonkey.grilledui.abstracts.GrilledActivity;
 import com.grilledmonkey.grilledui.adapters.SectionAdapter;
@@ -17,6 +19,8 @@ import com.grilledmonkey.grilledui.fragments.SectionListFragment;
 public class SectionActivity extends GrilledActivity {
 	private static final String ARG_SECTION_ID = "sectionId";
 	private static final String ARG_SECTION_FRAGMENT = "fragment";
+
+	private static final int WRONG_SECTION_ID = -1;
 
 	private boolean hasTwoPanes = false;
 	private FragmentManager fm;
@@ -35,6 +39,17 @@ public class SectionActivity extends GrilledActivity {
 	}
 
 	private void initSections(int layout) {
+		Intent intent = getIntent();
+		Bundle extras = intent.getExtras();
+		if(extras != null) {
+			int sectionId = extras.getInt(ARG_SECTION_ID, WRONG_SECTION_ID);
+			String fragment = extras.getString(ARG_SECTION_FRAGMENT);
+			if(sectionId != WRONG_SECTION_ID && !TextUtils.isEmpty(fragment)) {
+				// TODO Handle phone version here
+				Log.w("SSS", "Section: " + sectionId + " | Fragment: " + fragment);
+			}
+		}
+
 		fm = getSupportFragmentManager();
 		sectionAdapter = createSectionAdapter(fm);
 		setContentView(layout);
@@ -53,20 +68,10 @@ public class SectionActivity extends GrilledActivity {
 			fm.beginTransaction().replace(R.id.section_detail_container, fragment).commit();
 		}
 		else {
-			Intent intent = new Intent(this, SectionActivity.class);
+			Intent intent = new Intent(this, this.getClass());
 			intent.putExtra(ARG_SECTION_ID, position);
 			intent.putExtra(ARG_SECTION_FRAGMENT, fragment.getClass().getName());
 			startActivity(intent);
-
-
-
-			//			detailIntent.putE
-
-			// In single-pane mode, simply start the detail activity
-			// for the selected item ID.
-			//			Intent detailIntent = new Intent(this, ItemDetailActivity.class);
-			//			detailIntent.putExtra(ItemDetailFragment.ARG_ITEM_ID, id);
-			//			startActivity(detailIntent);
 		}
 	}
 
