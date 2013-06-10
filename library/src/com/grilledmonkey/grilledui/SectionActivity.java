@@ -10,6 +10,8 @@ import com.grilledmonkey.grilledui.abstracts.GrilledActivity;
 import com.grilledmonkey.grilledui.adapters.SectionAdapter;
 import com.grilledmonkey.grilledui.fragments.SectionListFragment;
 
+// TODO Add persistence for SectionAdapter for phone mode
+
 /**
  * 
  * @author Aux
@@ -34,7 +36,7 @@ public class SectionActivity extends GrilledActivity {
 	}
 
 	private void initSections() {
-		initSections(R.layout.gui__activity_section_list);
+		initSections(getLayout());
 	}
 
 	private void initSections(int layout) {
@@ -90,5 +92,10 @@ public class SectionActivity extends GrilledActivity {
 	@Override
 	public SectionAdapter createSectionAdapter(FragmentManager fm) {
 		return(new SectionAdapter(fm));
+	}
+
+	@Override
+	public int getLayout() {
+		return(R.layout.gui__activity_section_list);
 	}
 }

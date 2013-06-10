@@ -55,7 +55,7 @@ public class TabActivity extends GrilledActivity implements ActionBar.TabListene
 	 * reference GrilledUI in your project settings to use this form.
 	 */
 	public void initTabs() {
-		initTabs(R.layout.gui__activity_tab);
+		initTabs(getLayout());
 	}
 
 	/**
@@ -80,6 +80,13 @@ public class TabActivity extends GrilledActivity implements ActionBar.TabListene
 		pager.setAdapter(sectionAdapter);
 		pager.setOnPageChangeListener(new TabChangeListener(actionBar));
 	}
+
+	// TODO A better way should be implemented
+	/*public void addPagerStrip() {
+		PagerTitleStrip strip = new PagerTitleStrip(this);
+		strip.setLayoutParams(new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
+		strip.setGravity()
+	}*/
 
 	@Override
 	public void onTabReselected(Tab tab, FragmentTransaction ft) {
@@ -116,5 +123,14 @@ public class TabActivity extends GrilledActivity implements ActionBar.TabListene
 	public SectionAdapter createSectionAdapter(FragmentManager fm) {
 		return(new SectionAdapter(fm, actionBar, this));
 	}
+
+	@Override
+	public int getLayout() {
+		return(R.layout.gui__activity_tab);
+	}
+
+	/*public boolean withPagerStrip() {
+		return(false);
+	}*/
 
 }

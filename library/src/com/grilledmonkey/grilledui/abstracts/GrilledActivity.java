@@ -38,4 +38,11 @@ public abstract class GrilledActivity extends FragmentActivity {
 	 * @return SectionAdapter
 	 */
 	public abstract SectionAdapter createSectionAdapter(FragmentManager fm);
+
+	/**
+	 * Override this method to use your own layout in auto-init mode.
+	 * 
+	 * @return layout id to use
+	 */
+	public abstract int getLayout();
 }
