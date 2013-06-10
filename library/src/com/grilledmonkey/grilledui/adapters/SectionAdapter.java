@@ -130,6 +130,16 @@ public class SectionAdapter extends FragmentPagerAdapter {
 		return(actionBar != null ? actionBar.getTabAt(position) : null);
 	}
 
+	/**
+	 * This method is used for generating an adapter compatible
+	 * with lists and other UI elements in Android. Generated ArrayAdapter
+	 * is lazy-loaded and notified of all changes properly.
+	 * 
+	 * @param context
+	 * @param layoutId
+	 * @param viewId
+	 * @return
+	 */
 	public ArrayAdapter<String> getArrayAdapter(Context context, int layoutId, int viewId) {
 		if(arrayAdapter == null) {
 			arrayAdapter = new ArrayAdapter<String>(context, layoutId, viewId, titles);
