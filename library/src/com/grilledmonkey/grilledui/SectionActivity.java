@@ -50,18 +50,18 @@ public class SectionActivity extends GrilledActivity {
 			int sectionId = extras.getInt(ARG_SECTION_ID, WRONG_SECTION_ID);
 			String fragment = extras.getString(ARG_SECTION_FRAGMENT);
 			if(sectionId != WRONG_SECTION_ID && !TextUtils.isEmpty(fragment)) {
-				setContentView(R.layout.gui__activity_section_detail);
-				fm.beginTransaction().replace(R.id.section_detail_container, sectionAdapter.getItem(sectionId)).commit();
+				setContentView(getSectionDetailLayout());
+				fm.beginTransaction().replace(getSectionDetailContainer(), sectionAdapter.getItem(sectionId)).commit();
 				showList = false;
 			}
 		}
 
 		if(showList) {
 			setContentView(layout);
-			if(findViewById(R.id.section_detail_container) != null) {
+			if(findViewById(getSectionDetailContainer()) != null) {
 				hasTwoPanes = true;
 				// TODO Anything to do here?
-				((SectionListFragment)fm.findFragmentById(R.id.section_list)).setActivateOnItemClick(true);
+				((SectionListFragment)fm.findFragmentById(getSectionList())).setActivateOnItemClick(true);
 			}
 		}
 	}
@@ -69,8 +69,7 @@ public class SectionActivity extends GrilledActivity {
 	public void onSectionSelected(int position) {
 		Fragment fragment = sectionAdapter.getItem(position);
 		if(hasTwoPanes) {
-			// TODO R.id.section_detail_container should user changeable
-			fm.beginTransaction().replace(R.id.section_detail_container, fragment).commit();
+			fm.beginTransaction().replace(getSectionDetailContainer(), fragment).commit();
 		}
 		else {
 			Intent intent = new Intent(this, this.getClass());
@@ -97,5 +96,17 @@ public class SectionActivity extends GrilledActivity {
 	@Override
 	public int getLayout() {
 		return(R.layout.gui__activity_section_list);
+	}
+
+	public int getSectionDetailLayout() {
+		return(R.layout.gui__activity_section_detail);
+	}
+
+	public int getSectionDetailContainer() {
+		return(R.id.section_detail_container);
+	}
+
+	public int getSectionList() {
+		return(R.id.section_list);
 	}
 }
