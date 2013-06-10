@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.text.TextUtils;
-import android.util.Log;
 
 import com.grilledmonkey.grilledui.abstracts.GrilledActivity;
 import com.grilledmonkey.grilledui.adapters.SectionAdapter;
@@ -39,25 +38,29 @@ public class SectionActivity extends GrilledActivity {
 	}
 
 	private void initSections(int layout) {
+		boolean showList = true;
+		fm = getSupportFragmentManager();
+		sectionAdapter = createSectionAdapter(fm);
+
 		Intent intent = getIntent();
 		Bundle extras = intent.getExtras();
 		if(extras != null) {
 			int sectionId = extras.getInt(ARG_SECTION_ID, WRONG_SECTION_ID);
 			String fragment = extras.getString(ARG_SECTION_FRAGMENT);
 			if(sectionId != WRONG_SECTION_ID && !TextUtils.isEmpty(fragment)) {
-				// TODO Handle phone version here
-				Log.w("SSS", "Section: " + sectionId + " | Fragment: " + fragment);
+				setContentView(R.layout.gui__activity_section_detail);
+				fm.beginTransaction().replace(R.id.section_detail_container, sectionAdapter.getItem(sectionId)).commit();
+				showList = false;
 			}
 		}
 
-		fm = getSupportFragmentManager();
-		sectionAdapter = createSectionAdapter(fm);
-		setContentView(layout);
-
-		if(findViewById(R.id.section_detail_container) != null) {
-			hasTwoPanes = true;
-			// TODO Anything to do here?
-			((SectionListFragment)fm.findFragmentById(R.id.section_list)).setActivateOnItemClick(true);
+		if(showList) {
+			setContentView(layout);
+			if(findViewById(R.id.section_detail_container) != null) {
+				hasTwoPanes = true;
+				// TODO Anything to do here?
+				((SectionListFragment)fm.findFragmentById(R.id.section_list)).setActivateOnItemClick(true);
+			}
 		}
 	}
 
