@@ -1,6 +1,5 @@
 package com.grilledmonkey.grilleduiexample;
 
-import android.app.ActionBar.Tab;
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -9,8 +8,6 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 
-import com.grilledmonkey.grilledui.SectionActivity;
-import com.grilledmonkey.grilledui.TabActivity;
 import com.grilledmonkey.grilledui.abstracts.GrilledActivity;
 import com.grilledmonkey.grilledui.adapters.SectionAdapter;
 
@@ -67,20 +64,15 @@ public class TabModFragment extends Fragment implements OnClickListener {
 
 			case R.id.button_change_tab:
 				if(activity != null) {
-					if(activity instanceof TabActivity) {
-						Tab tab = activity.getSectionAdapter().getTab(0);
-						CharSequence text = tab.getText();
-						if(text.charAt(text.length() - 1) == '*') {
-							text = text.subSequence(0, text.length() - 2);
-						}
-						else {
-							text = text + " *";
-						}
-						tab.setText(text);
+					SectionAdapter adapter = activity.getSectionAdapter();
+					String text = adapter.getTitle(0);
+					if(text.charAt(text.length() - 1) == '*') {
+						text = text.substring(0, text.length() - 2);
 					}
-					else if(activity instanceof SectionActivity){
-						// TODO Implement! Should use SectionAdapter.changeTitle()
+					else {
+						text = text + " *";
 					}
+					adapter.setTitle(0, text);
 				}
 				break;
 		}

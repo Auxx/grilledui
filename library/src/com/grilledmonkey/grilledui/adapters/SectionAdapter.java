@@ -87,8 +87,20 @@ public class SectionAdapter extends FragmentPagerAdapter {
 		return(this);
 	}
 
-	public void changeTitle(String title) {
-		// TODO Implement!
+	public void setTitle(int position, String title) {
+		titles.set(position, title);
+
+		if(actionBar != null) {
+			actionBar.getTabAt(position).setText(title);
+		}
+
+		if(arrayAdapter != null) {
+			arrayAdapter.notifyDataSetChanged();
+		}
+	}
+
+	public String getTitle(int position) {
+		return(titles.get(position));
 	}
 
 	private Tab createTab(String title) {
