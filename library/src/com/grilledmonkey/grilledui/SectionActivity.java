@@ -13,6 +13,8 @@ import com.grilledmonkey.grilledui.fragments.SectionListFragment;
 // TODO Add persistence for SectionAdapter for phone mode
 
 /**
+ * SectionActivity is an easy to use implementation of Google's
+ * master/detail flow. Override getters to customize its behavior.
  * 
  * @author Aux
  *
