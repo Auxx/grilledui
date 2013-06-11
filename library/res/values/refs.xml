@@ -1,0 +1,3 @@
+<resources>
+	<item name="gui__activity_hybrid" type="layout">@layout/gui__activity_tab</item>
+</resources>
