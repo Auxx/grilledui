@@ -1,6 +1,8 @@
 package com.grilledmonkey.grilledui;
 
 import android.app.ActionBar;
+import android.app.ActionBar.Tab;
+import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.view.ViewPager;
@@ -18,7 +20,7 @@ import com.grilledmonkey.grilledui.listener.TabChangeListener;
  * @author Aux
  *
  */
-public class HybridActivity extends GrilledActivity {
+public class HybridActivity extends GrilledActivity implements ActionBar.TabListener {
 	private boolean hasTwoPanes = false;
 	private FragmentManager fm;
 	private SectionAdapter sectionAdapter;
@@ -50,7 +52,7 @@ public class HybridActivity extends GrilledActivity {
 			actionBar = getActionBar();
 			actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
 			pager = findViewPager();
-			sectionAdapter = createSectionAdapter(getSupportFragmentManager());
+			sectionAdapter = createSectionAdapter(fm);
 			pager.setAdapter(sectionAdapter);
 			pager.setOnPageChangeListener(new TabChangeListener(actionBar));
 		}
@@ -68,7 +70,7 @@ public class HybridActivity extends GrilledActivity {
 
 	@Override
 	public SectionAdapter createSectionAdapter(FragmentManager fm) {
-		return(new SectionAdapter(fm));
+		return(new SectionAdapter(fm, actionBar, this));
 	}
 
 	public int getSectionDetailContainer() {
@@ -90,6 +92,19 @@ public class HybridActivity extends GrilledActivity {
 	@Override
 	public int getLayout() {
 		return(R.layout.gui__activity_hybrid);
+	}
+
+	@Override
+	public void onTabReselected(Tab tab, FragmentTransaction ft) {
+	}
+
+	@Override
+	public void onTabSelected(Tab tab, FragmentTransaction ft) {
+		pager.setCurrentItem(tab.getPosition());
+	}
+
+	@Override
+	public void onTabUnselected(Tab tab, FragmentTransaction ft) {
 	}
 
 }
