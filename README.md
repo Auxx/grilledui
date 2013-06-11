@@ -1,10 +1,14 @@
 # GrilledUI
 
-Library to implement common UIs easily. Right now only TabActivity is ready, more to come.
+Library to implement common UIs easily. Right now only TabActivity and SectionActivity are ready, more to come.
 
 ## TabActivity
 
 This is a base activity to create your tabbed UIs. It wraps all the code needed to create and manage scrollable tabs inside activity. Empty activity is created by default, override `createSectionAdapter()` method to add tabs on start-up or use `getSectionAdapter()` to retrieve current section adapter to manage tabs dynamically.
+
+## SectionActivity
+
+This is a base activity to create master detail flow UI for your app. Unlike Google's example, everything is done in one activity, UI sections can be populated from XML file and dynamic modification is available.
 
 ## XmlSectionReader
 
