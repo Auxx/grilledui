@@ -1,10 +1,15 @@
 package com.grilledmonkey.grilledui;
 
+import android.app.ActionBar;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
+import android.support.v4.view.ViewPager;
+import android.view.View;
 
 import com.grilledmonkey.grilledui.abstracts.GrilledActivity;
 import com.grilledmonkey.grilledui.adapters.SectionAdapter;
+import com.grilledmonkey.grilledui.fragments.SectionListFragment;
+import com.grilledmonkey.grilledui.listener.TabChangeListener;
 
 /**
  * HybridActivity combines TabActivity for phones and SectionActivity for
@@ -14,6 +19,11 @@ import com.grilledmonkey.grilledui.adapters.SectionAdapter;
  *
  */
 public class HybridActivity extends GrilledActivity {
+	private boolean hasTwoPanes = false;
+	private FragmentManager fm;
+	private SectionAdapter sectionAdapter;
+	private ActionBar actionBar;
+	private ViewPager pager;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -28,24 +38,58 @@ public class HybridActivity extends GrilledActivity {
 	}
 
 	private void initSections(int layout) {
+		fm = getSupportFragmentManager();
+
+		setContentView(layout);
+		if(findViewById(getSectionDetailContainer()) != null) {
+			hasTwoPanes = true;
+			sectionAdapter = createSectionAdapter(fm);
+			((SectionListFragment)fm.findFragmentById(getSectionList())).setActivateOnItemClick(true);
+		}
+		else {
+			actionBar = getActionBar();
+			actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
+			pager = findViewPager();
+			sectionAdapter = createSectionAdapter(getSupportFragmentManager());
+			pager.setAdapter(sectionAdapter);
+			pager.setOnPageChangeListener(new TabChangeListener(actionBar));
+		}
+	}
+
+	public ViewPager findViewPager() {
+		View view = findViewById(R.id.gui__tab_pager);
+		return(view instanceof ViewPager ? (ViewPager)view : null);
 	}
 
 	@Override
 	public SectionAdapter getSectionAdapter() {
-		// TODO Auto-generated method stub
-		return null;
+		return(sectionAdapter);
 	}
 
 	@Override
 	public SectionAdapter createSectionAdapter(FragmentManager fm) {
-		// TODO Auto-generated method stub
-		return null;
+		return(new SectionAdapter(fm));
+	}
+
+	public int getSectionDetailContainer() {
+		return(R.id.section_detail_container);
+	}
+
+	public int getSectionList() {
+		return(R.id.section_list);
+	}
+
+	public boolean hasTwoPanes() {
+		return(hasTwoPanes);
+	}
+
+	public ViewPager getViewPager() {
+		return(pager);
 	}
 
 	@Override
 	public int getLayout() {
-		// TODO Auto-generated method stub
-		return 0;
+		return(R.layout.gui__activity_hybrid);
 	}
 
 }
