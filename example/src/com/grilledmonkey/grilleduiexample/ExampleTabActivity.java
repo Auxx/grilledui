@@ -28,4 +28,9 @@ public class ExampleTabActivity extends FragmentActivity {
 		startActivity(intent);
 	}
 
+	public void nextHybridActivity(View view) {
+		Intent intent = new Intent(this, TestHybridActivity.class);
+		startActivity(intent);
+	}
+
 }
