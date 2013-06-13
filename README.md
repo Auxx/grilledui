@@ -1,6 +1,6 @@
 # GrilledUI
 
-Library to implement common UIs easily. Right now only TabActivity and SectionActivity are ready, more to come.
+Library to implement common UIs easily. Right now only TabActivity, SectionActivity and HybridActivity are ready, more to come.
 
 ## TabActivity
 
@@ -9,6 +9,10 @@ This is a base activity to create your tabbed UIs. It wraps all the code needed 
 ## SectionActivity
 
 This is a base activity to create master detail flow UI for your app. Unlike Google's example, everything is done in one activity, UI sections can be populated from XML file and dynamic modification is available.
+
+## HybridActivity
+
+This activity is a hybrid between MDF and tabs. Tabs will be used on phones and MDF on tablets by default. But behaviour can easily be overriden with proper layouts. It is quite possible to use MDF in landscape and tabs in portrait orientation, for example.
 
 ## XmlSectionReader
 
