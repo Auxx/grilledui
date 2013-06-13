@@ -37,11 +37,11 @@ public class SectionActivity extends GrilledActivity {
 		}
 	}
 
-	private void initSections() {
+	public void initSections() {
 		initSections(getLayout());
 	}
 
-	private void initSections(int layout) {
+	public void initSections(int layout) {
 		boolean showList = true;
 		fm = getSupportFragmentManager();
 		sectionAdapter = createSectionAdapter(fm);

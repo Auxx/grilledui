@@ -3,12 +3,10 @@ package com.grilledmonkey.grilledui;
 import android.app.ActionBar;
 import android.app.ActionBar.Tab;
 import android.app.FragmentTransaction;
-import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.view.ViewPager;
 import android.view.View;
 
-import com.grilledmonkey.grilledui.abstracts.GrilledActivity;
 import com.grilledmonkey.grilledui.adapters.SectionAdapter;
 import com.grilledmonkey.grilledui.fragments.SectionListFragment;
 import com.grilledmonkey.grilledui.listener.TabChangeListener;
@@ -20,7 +18,7 @@ import com.grilledmonkey.grilledui.listener.TabChangeListener;
  * @author Aux
  *
  */
-public class HybridActivity extends GrilledActivity implements ActionBar.TabListener {
+public class HybridActivity extends SectionActivity implements ActionBar.TabListener {
 	private boolean hasTwoPanes = false;
 	private FragmentManager fm;
 	private SectionAdapter sectionAdapter;
@@ -28,18 +26,7 @@ public class HybridActivity extends GrilledActivity implements ActionBar.TabList
 	private ViewPager pager;
 
 	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		if(needsAutoInit()) {
-			initSections();
-		}
-	}
-
-	private void initSections() {
-		initSections(getLayout());
-	}
-
-	private void initSections(int layout) {
+	public void initSections(int layout) {
 		fm = getSupportFragmentManager();
 
 		setContentView(layout);
@@ -73,14 +60,7 @@ public class HybridActivity extends GrilledActivity implements ActionBar.TabList
 		return(new SectionAdapter(fm, actionBar, this));
 	}
 
-	public int getSectionDetailContainer() {
-		return(R.id.section_detail_container);
-	}
-
-	public int getSectionList() {
-		return(R.id.section_list);
-	}
-
+	@Override
 	public boolean hasTwoPanes() {
 		return(hasTwoPanes);
 	}
