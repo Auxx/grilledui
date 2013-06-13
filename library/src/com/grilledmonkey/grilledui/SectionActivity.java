@@ -23,11 +23,11 @@ public class SectionActivity extends GrilledActivity {
 	private static final String ARG_SECTION_ID = "sectionId";
 	private static final String ARG_SECTION_FRAGMENT = "fragment";
 
-	private static final int WRONG_SECTION_ID = -1;
+	protected static final int WRONG_SECTION_ID = -1;
 
-	private boolean hasTwoPanes = false;
-	private FragmentManager fm;
-	private SectionAdapter sectionAdapter;
+	protected boolean hasTwoPanes = false;
+	protected FragmentManager fm;
+	protected SectionAdapter sectionAdapter;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

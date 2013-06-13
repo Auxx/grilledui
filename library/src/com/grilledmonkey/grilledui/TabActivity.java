@@ -87,7 +87,9 @@ public class TabActivity extends GrilledActivity implements ActionBar.TabListene
 
 	@Override
 	public void onTabSelected(Tab tab, FragmentTransaction ft) {
-		pager.setCurrentItem(tab.getPosition());
+		if(pager != null) {
+			pager.setCurrentItem(tab.getPosition());
+		}
 	}
 
 	@Override

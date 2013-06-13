@@ -19,27 +19,23 @@ import com.grilledmonkey.grilledui.listener.TabChangeListener;
  *
  */
 public class HybridActivity extends SectionActivity implements ActionBar.TabListener {
-	private boolean hasTwoPanes = false;
-	private FragmentManager fm;
-	private SectionAdapter sectionAdapter;
 	private ActionBar actionBar;
 	private ViewPager pager;
 
 	@Override
 	public void initSections(int layout) {
 		fm = getSupportFragmentManager();
+		sectionAdapter = createSectionAdapter(fm);
 
 		setContentView(layout);
 		if(findViewById(getSectionDetailContainer()) != null) {
 			hasTwoPanes = true;
-			sectionAdapter = createSectionAdapter(fm);
 			((SectionListFragment)fm.findFragmentById(getSectionList())).setActivateOnItemClick(true);
 		}
 		else {
 			actionBar = getActionBar();
 			actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
 			pager = findViewPager();
-			sectionAdapter = createSectionAdapter(fm);
 			pager.setAdapter(sectionAdapter);
 			pager.setOnPageChangeListener(new TabChangeListener(actionBar));
 		}
@@ -51,18 +47,8 @@ public class HybridActivity extends SectionActivity implements ActionBar.TabList
 	}
 
 	@Override
-	public SectionAdapter getSectionAdapter() {
-		return(sectionAdapter);
-	}
-
-	@Override
 	public SectionAdapter createSectionAdapter(FragmentManager fm) {
 		return(new SectionAdapter(fm, actionBar, this));
-	}
-
-	@Override
-	public boolean hasTwoPanes() {
-		return(hasTwoPanes);
 	}
 
 	public ViewPager getViewPager() {
@@ -80,7 +66,9 @@ public class HybridActivity extends SectionActivity implements ActionBar.TabList
 
 	@Override
 	public void onTabSelected(Tab tab, FragmentTransaction ft) {
-		pager.setCurrentItem(tab.getPosition());
+		if(pager != null) {
+			pager.setCurrentItem(tab.getPosition());
+		}
 	}
 
 	@Override
