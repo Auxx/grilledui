@@ -10,7 +10,7 @@ import com.grilledmonkey.grilledui.adapters.SectionAdapter;
 public class TestHybridActivity extends HybridActivity {
 	@Override
 	public SectionAdapter createSectionAdapter(FragmentManager fm) {
-		SectionAdapter adapter = new SectionAdapter(fm);
+		SectionAdapter adapter = new SectionAdapter(fm, getActionBar(), this);
 
 		adapter.add(new TabModFragment(), "Tab actions");
 
