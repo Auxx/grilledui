@@ -1,6 +1,8 @@
 # GrilledUI
 
-Library to implement common UIs easily. Available UI types are: TabActivity, SectionActivity and HybridActivity. GrilledUI is licensed under 2 clause BSD license. In simple words - use the way you want! But remember to notify your users that you use this library.
+Library to implement common UIs easily. Available UI types are: TabActivity, SectionActivity and HybridActivity. Pre-ICS devices are also supported with the help of `ActionBarSherlock`. Use `library` folder for ICS+ devices only and `library-sherlock` together with your installation of `ActionBarSherlock` for 2.1+ projects.
+
+GrilledUI is licensed under 2 clause BSD license. In simple words - use the way you want! But remember to notify your users that you use this library.
 
 ## TabActivity
 
