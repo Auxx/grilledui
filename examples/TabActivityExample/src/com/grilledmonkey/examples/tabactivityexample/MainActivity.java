@@ -8,7 +8,7 @@ import com.grilledmonkey.grilledui.TabActivity;
 import com.grilledmonkey.grilledui.adapters.SectionAdapter;
 
 /**
- * This example shows the basic usage of TabActivity with GrilledUI library
+ * This example shows the basic usage of {@link TabActivity} with GrilledUI library
  * referencing and using provided layouts. GrilledUI layouts can only be used
  * when referencing GrilledUI in source form. Built-in layouts can not be used
  * with pre-compiled library in JAR form.
