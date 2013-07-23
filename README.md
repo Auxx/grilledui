@@ -32,4 +32,4 @@ XML file must have `<sections>` root tag with multiple `<section>` tags inside. 
 
 ## Examples
 
-Check project wiki for code example descriptions and where to find them (all inside repo, actually).
+Check [project wiki](https://github.com/Auxx/grilledui/wiki/Examples) for code example descriptions and where to find them (all inside repo, actually).
