@@ -18,7 +18,7 @@ import com.grilledmonkey.grilledui.adapters.SectionAdapter;
  * used as a base to many simple apps with minimal navigation requirements.
  * You can put your logic inside fragments and completely forget about
  * activity.
- * 
+ *
  * @author Aux
  *
  */
@@ -42,6 +42,9 @@ public class MainActivity extends TabActivity {
 		// Add two tabs.
 		adapter.add(new DummySectionFragment(), "First tab");
 		adapter.add(new DummySectionFragment(), "Second tab");
+
+		// Chaining example
+		// adapter.add(new DummySectionFragment(), "First tab").add(new DummySectionFragment(), "Second tab");
 
 		// Return populated adapter.
 		return(adapter);
