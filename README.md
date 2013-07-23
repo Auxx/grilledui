@@ -1,6 +1,6 @@
 # GrilledUI
 
-Library to implement common UIs easily. Right now only TabActivity, SectionActivity and HybridActivity are ready, more to come.
+Library to implement common UIs easily. Available UI types are: TabActivity, SectionActivity and HybridActivity. GrilledUI is licensed under 2 clause BSD license. In simple words - use the way you want! But remember to notify your users that you use this library.
 
 ## TabActivity
 
@@ -12,7 +12,7 @@ This is a base activity to create master detail flow UI for your app. Unlike Goo
 
 ## HybridActivity
 
-This activity is a hybrid between MDF and tabs. Tabs will be used on phones and MDF on tablets by default. But behaviour can easily be overriden with proper layouts. It is quite possible to use MDF in landscape and tabs in portrait orientation, for example.
+This activity is a hybrid between MDF and tabs. Tabs will be used on phones and MDF on tablets by default. But behaviour can easily be overriden with proper layouts. It is quite possible to use MDF in landscape and tabs in portrait orientation, for example. Check out `CustomLayoutExample` for this advanced behaviour.
 
 ## XmlSectionReader
 
@@ -29,3 +29,7 @@ XML file must have `<sections>` root tag with multiple `<section>` tags inside. 
   <section title="@string/title_section2" fragment="com.grilledmonkey.grilleduiexample.TabModFragment" />
 </sections>
 ```
+
+## Examples
+
+Check project wiki for code example descriptions and where to find them (all inside repo, actually).
