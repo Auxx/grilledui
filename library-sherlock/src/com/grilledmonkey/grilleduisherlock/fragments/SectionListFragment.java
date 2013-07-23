@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.ListView;
 
 import com.actionbarsherlock.app.SherlockListFragment;
-import com.grilledmonkey.grilledui.SectionActivity;
+import com.grilledmonkey.grilleduisherlock.SectionActivity;
 
 public class SectionListFragment extends SherlockListFragment {
 	private static final String STATE_ACTIVE_SECTION = "activate_section";

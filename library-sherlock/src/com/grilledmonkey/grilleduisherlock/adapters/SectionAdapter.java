@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
-import android.app.TabActivity;
 import android.content.Context;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
@@ -13,7 +12,8 @@ import android.widget.ArrayAdapter;
 import com.actionbarsherlock.app.ActionBar;
 import com.actionbarsherlock.app.ActionBar.Tab;
 import com.actionbarsherlock.app.SherlockFragment;
-import com.grilledmonkey.grilledui.xml.XmlSectionReader;
+import com.grilledmonkey.grilleduisherlock.TabActivity;
+import com.grilledmonkey.grilleduisherlock.xml.XmlSectionReader;
 
 /**
  * This is adapter for {@link TabActivity} tabs. It stores and manages tabs,
