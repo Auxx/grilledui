@@ -1,0 +1,12 @@
+# incremental data. DO NOT EDIT.
+# format is <lastModified> <length> <SHA-1> <path>
+# Encoding is UTF-8
+1383485261630 541 d136c2bf810f814e8fb2afe3c914ee820666e001 C:\Users\Sanya\AndroidStudioProjects\grilledui\grilledui\build\res\all\debug\values\values.xml
+1383485261657 277 dea7f6cc4d1bd7f391112fd128fac13dea8f49e2 C:\Users\Sanya\AndroidStudioProjects\grilledui\grilledui\build\res\all\debug\values-v11\values.xml
+1383485261636 291 e0b3dc5a0206b06b584e94e66169a65db56cdd36 C:\Users\Sanya\AndroidStudioProjects\grilledui\grilledui\build\res\all\debug\values-v14\values.xml
+1383485261659 404 1ea069bc81f2c54d4fe1ceb35df4f039bc575772 C:\Users\Sanya\AndroidStudioProjects\grilledui\grilledui\build\res\all\debug\values-large\values.xml
+1383485261630 407 432284053fd087ebd0cde00a758fe68891efc745 C:\Users\Sanya\AndroidStudioProjects\grilledui\grilledui\build\res\all\debug\layout\gui__activity_tab.xml
+1383485261583 1005 3f74442c05475608371c3a0c4340a01585b8579d C:\Users\Sanya\AndroidStudioProjects\grilledui\grilledui\build\res\all\debug\layout\gui__activity_section_twopane.xml
+1383485261557 584 84a758d45f63ae0e0e7d6a566f80b93b8dd84e51 C:\Users\Sanya\AndroidStudioProjects\grilledui\grilledui\build\res\all\debug\layout\gui__activity_section_list.xml
+1383485261598 440 89d00a27f4029223af1acbc3c12c26cdc066ba24 C:\Users\Sanya\AndroidStudioProjects\grilledui\grilledui\build\res\all\debug\layout\gui__activity_section_detail.xml
+1383485261633 406 164fce5881daf75924cf6b9bf9752abb06f54684 C:\Users\Sanya\AndroidStudioProjects\grilledui\grilledui\build\res\all\debug\values-sw600dp\values.xml

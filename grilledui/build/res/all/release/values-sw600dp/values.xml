@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- From: file:/C:/Users/Sanya/AndroidStudioProjects/grilledui/grilledui/res/values-sw600dp/refs.xml -->
+    <eat-comment />
+
+    <item name="gui__activity_hybrid" type="layout">@layout/gui__activity_section_twopane</item>
+    <item name="gui__activity_section_list" type="layout">@layout/gui__activity_section_twopane</item>
+
+</resources>

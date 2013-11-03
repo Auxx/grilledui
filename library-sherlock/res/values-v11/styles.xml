@@ -1,7 +1,0 @@
-<resources>
-
-	<style name="twopane">
-	    <item name="android:divider">?android:attr/dividerHorizontal</item>
-	</style>
-
-</resources>

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<sections>
-	<section title="@string/title_section1" fragment="com.grilledmonkey.examples.tabactivityfromxml.DummySectionFragment" />
-	<section title="@string/title_section2" fragment="com.grilledmonkey.examples.tabactivityfromxml.DummySectionFragment" />
-	<section title="@string/title_section3" fragment="com.grilledmonkey.examples.tabactivityfromxml.DummySectionFragment" />
-</sections>

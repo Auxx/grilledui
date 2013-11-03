@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger>
+
+    <dataSet config="main" >
+        <source path="C:\Users\Sanya\AndroidStudioProjects\grilledui\grilledui\res" >
+            <file
+                name="gui__activity_section_detail"
+                path="C:\Users\Sanya\AndroidStudioProjects\grilledui\grilledui\res\layout\gui__activity_section_detail.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="gui__activity_section_list"
+                path="C:\Users\Sanya\AndroidStudioProjects\grilledui\grilledui\res\layout\gui__activity_section_list.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="gui__activity_section_twopane"
+                path="C:\Users\Sanya\AndroidStudioProjects\grilledui\grilledui\res\layout\gui__activity_section_twopane.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="gui__activity_tab"
+                path="C:\Users\Sanya\AndroidStudioProjects\grilledui\grilledui\res\layout\gui__activity_tab.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                path="C:\Users\Sanya\AndroidStudioProjects\grilledui\grilledui\res\values\refs.xml"
+                qualifiers="" >
+                <item
+                    name="gui__activity_hybrid"
+                    type="layout">
+@layout/gui__activity_tab
+                </item>
+            </file>
+            <file
+                path="C:\Users\Sanya\AndroidStudioProjects\grilledui\grilledui\res\values\styles.xml"
+                qualifiers="" >
+
+                <style
+                    name="AppBaseTheme"
+                    parent="android:Theme.Light" >
+                </style>
+
+                <style
+                    name="AppTheme"
+                    parent="AppBaseTheme" >
+                </style>
+            </file>
+            <file
+                path="C:\Users\Sanya\AndroidStudioProjects\grilledui\grilledui\res\values-large\refs.xml"
+                qualifiers="large" >
+                <item
+                    name="gui__activity_section_list"
+                    type="layout">
+@layout/gui__activity_section_twopane
+                </item>
+                <item
+                    name="gui__activity_hybrid"
+                    type="layout">
+@layout/gui__activity_section_twopane
+                </item>
+            </file>
+            <file
+                path="C:\Users\Sanya\AndroidStudioProjects\grilledui\grilledui\res\values-sw600dp\refs.xml"
+                qualifiers="sw600dp" >
+                <item
+                    name="gui__activity_hybrid"
+                    type="layout">
+@layout/gui__activity_section_twopane
+                </item>
+                <item
+                    name="gui__activity_section_list"
+                    type="layout">
+@layout/gui__activity_section_twopane
+                </item>
+            </file>
+            <file
+                path="C:\Users\Sanya\AndroidStudioProjects\grilledui\grilledui\res\values-v11\styles.xml"
+                qualifiers="v11" >
+
+                <style
+                    name="AppBaseTheme"
+                    parent="android:Theme.Holo.Light" >
+                </style>
+            </file>
+            <file
+                path="C:\Users\Sanya\AndroidStudioProjects\grilledui\grilledui\res\values-v14\styles.xml"
+                qualifiers="v14" >
+
+                <style
+                    name="AppBaseTheme"
+                    parent="android:Theme.Holo.Light.DarkActionBar" >
+                </style>
+            </file>
+        </source>
+        <source path="C:\Users\Sanya\AndroidStudioProjects\grilledui\grilledui\build\res\rs\debug" />
+    </dataSet>
+    <dataSet config="debug" >
+        <source path="C:\Users\Sanya\AndroidStudioProjects\grilledui\grilledui\build-types\debug\res" />
+    </dataSet>
+
+</merger>
