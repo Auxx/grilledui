@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-
-    <!-- From: file:/C:/Users/Sanya/AndroidStudioProjects/grilledui/grilledui/res/values-v11/styles.xml -->
-    <eat-comment />
-
-    <style name="AppBaseTheme" parent="android:Theme.Holo.Light"></style>
-
-</resources>
