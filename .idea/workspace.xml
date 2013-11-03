@@ -2,218 +2,56 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dbb24a81-3598-4461-a98a-887cfb0b72aa" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\example\.classpath" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\example\.project" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\example\.settings\org.eclipse.jdt.core.prefs" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\example\AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\example\ic_launcher-web.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\example\libs\android-support-v4.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\example\proguard-project.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\example\project.properties" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\example\res\drawable-hdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\example\res\drawable-mdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\example\res\drawable-xhdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\example\res\drawable-xxhdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\example\res\layout\activity_example_tab.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\example\res\layout\fragment_example_tab_dummy.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\example\res\layout\fragment_tab_mod.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\example\res\menu\example_tab.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\example\res\values-sw600dp\dimens.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\example\res\values-sw720dp-land\dimens.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\example\res\values-v11\styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\example\res\values-v14\styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\example\res\values\dimens.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\example\res\values\strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\example\res\values\styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\example\res\xml\sections.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\example\src\com\grilledmonkey\grilleduiexample\DummySectionFragment.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\example\src\com\grilledmonkey\grilleduiexample\ExampleTabActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\example\src\com\grilledmonkey\grilleduiexample\TabModFragment.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\example\src\com\grilledmonkey\grilleduiexample\TestActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\example\src\com\grilledmonkey\grilleduiexample\TestHybridActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\example\src\com\grilledmonkey\grilleduiexample\TestSectionActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\example\src\com\grilledmonkey\grilleduiexample\TestXmlActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\CustomLayoutExample\.classpath" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\CustomLayoutExample\.project" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\CustomLayoutExample\AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\CustomLayoutExample\ic_launcher-web.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\CustomLayoutExample\libs\android-support-v4.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\CustomLayoutExample\proguard-project.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\CustomLayoutExample\project.properties" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\CustomLayoutExample\res\drawable-hdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\CustomLayoutExample\res\drawable-mdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\CustomLayoutExample\res\drawable-xhdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\CustomLayoutExample\res\drawable-xxhdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\CustomLayoutExample\res\layout\activity_section_twopane.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\CustomLayoutExample\res\layout\activity_tab.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\CustomLayoutExample\res\layout\fragment_example_tab_dummy.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\CustomLayoutExample\res\values-land\refs.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\CustomLayoutExample\res\values-large\refs.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\CustomLayoutExample\res\values-sw600dp-port\refs.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\CustomLayoutExample\res\values-sw600dp\dimens.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\CustomLayoutExample\res\values-sw720dp-land\dimens.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\CustomLayoutExample\res\values-sw720dp\refs.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\CustomLayoutExample\res\values-v11\styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\CustomLayoutExample\res\values-v14\styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\CustomLayoutExample\res\values\dimens.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\CustomLayoutExample\res\values\refs.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\CustomLayoutExample\res\values\strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\CustomLayoutExample\res\values\styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\CustomLayoutExample\src\com\grilledmonkey\examples\customlayoutexample\DummySectionFragment.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\CustomLayoutExample\src\com\grilledmonkey\examples\customlayoutexample\MainActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\HybridActivityExample\.classpath" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\HybridActivityExample\.project" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\HybridActivityExample\AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\HybridActivityExample\ic_launcher-web.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\HybridActivityExample\libs\android-support-v4.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\HybridActivityExample\proguard-project.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\HybridActivityExample\project.properties" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\HybridActivityExample\res\drawable-hdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\HybridActivityExample\res\drawable-mdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\HybridActivityExample\res\drawable-xhdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\HybridActivityExample\res\drawable-xxhdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\HybridActivityExample\res\layout\fragment_example_tab_dummy.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\HybridActivityExample\res\values-sw600dp\dimens.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\HybridActivityExample\res\values-sw720dp-land\dimens.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\HybridActivityExample\res\values-v11\styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\HybridActivityExample\res\values-v14\styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\HybridActivityExample\res\values\dimens.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\HybridActivityExample\res\values\strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\HybridActivityExample\res\values\styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\HybridActivityExample\src\com\grilledmonkey\examples\hybridactivityexample\DummySectionFragment.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\HybridActivityExample\src\com\grilledmonkey\examples\hybridactivityexample\MainActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\HybridSherlockActivityExample\.classpath" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\HybridSherlockActivityExample\.project" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\HybridSherlockActivityExample\AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\HybridSherlockActivityExample\ic_launcher-web.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\HybridSherlockActivityExample\libs\android-support-v4.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\HybridSherlockActivityExample\proguard-project.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\HybridSherlockActivityExample\project.properties" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\HybridSherlockActivityExample\res\drawable-hdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\HybridSherlockActivityExample\res\drawable-mdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\HybridSherlockActivityExample\res\drawable-xhdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\HybridSherlockActivityExample\res\drawable-xxhdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\HybridSherlockActivityExample\res\layout\fragment_example_tab_dummy.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\HybridSherlockActivityExample\res\values-sw600dp\dimens.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\HybridSherlockActivityExample\res\values-sw720dp-land\dimens.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\HybridSherlockActivityExample\res\values-v11\styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\HybridSherlockActivityExample\res\values-v14\styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\HybridSherlockActivityExample\res\values\dimens.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\HybridSherlockActivityExample\res\values\strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\HybridSherlockActivityExample\res\values\styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\HybridSherlockActivityExample\src\com\grilledmonkey\examples\hybridsherlockactivityexample\DummySectionFragment.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\HybridSherlockActivityExample\src\com\grilledmonkey\examples\hybridsherlockactivityexample\MainActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\SectionActivityExample\.classpath" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\SectionActivityExample\.project" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\SectionActivityExample\AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\SectionActivityExample\ic_launcher-web.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\SectionActivityExample\libs\android-support-v4.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\SectionActivityExample\proguard-project.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\SectionActivityExample\project.properties" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\SectionActivityExample\res\drawable-hdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\SectionActivityExample\res\drawable-mdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\SectionActivityExample\res\drawable-xhdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\SectionActivityExample\res\drawable-xxhdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\SectionActivityExample\res\layout\fragment_example_tab_dummy.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\SectionActivityExample\res\values-sw600dp\dimens.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\SectionActivityExample\res\values-sw720dp-land\dimens.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\SectionActivityExample\res\values-v11\styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\SectionActivityExample\res\values-v14\styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\SectionActivityExample\res\values\dimens.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\SectionActivityExample\res\values\strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\SectionActivityExample\res\values\styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\SectionActivityExample\src\com\grilledmonkey\examples\sectionactivityexample\DummySectionFragment.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\SectionActivityExample\src\com\grilledmonkey\examples\sectionactivityexample\MainActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\TabActivityExample\.classpath" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\TabActivityExample\.project" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\TabActivityExample\.settings\org.eclipse.jdt.core.prefs" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\TabActivityExample\AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\TabActivityExample\ic_launcher-web.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\TabActivityExample\libs\android-support-v4.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\TabActivityExample\proguard-project.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\TabActivityExample\project.properties" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\TabActivityExample\res\drawable-hdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\TabActivityExample\res\drawable-mdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\TabActivityExample\res\drawable-xhdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\TabActivityExample\res\drawable-xxhdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\TabActivityExample\res\layout\fragment_example_tab_dummy.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\TabActivityExample\res\values-sw600dp\dimens.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\TabActivityExample\res\values-sw720dp-land\dimens.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\TabActivityExample\res\values-v11\styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\TabActivityExample\res\values-v14\styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\TabActivityExample\res\values\dimens.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\TabActivityExample\res\values\strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\TabActivityExample\res\values\styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\TabActivityExample\src\com\grilledmonkey\examples\tabactivityexample\DummySectionFragment.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\TabActivityExample\src\com\grilledmonkey\examples\tabactivityexample\MainActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\TabActivityFromXML\.classpath" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\TabActivityFromXML\.project" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\TabActivityFromXML\.settings\org.eclipse.jdt.core.prefs" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\TabActivityFromXML\AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\TabActivityFromXML\ic_launcher-web.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\TabActivityFromXML\libs\android-support-v4.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\TabActivityFromXML\proguard-project.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\TabActivityFromXML\project.properties" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\TabActivityFromXML\res\drawable-hdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\TabActivityFromXML\res\drawable-mdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\TabActivityFromXML\res\drawable-xhdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\TabActivityFromXML\res\drawable-xxhdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\TabActivityFromXML\res\layout\fragment_example_tab_dummy.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\TabActivityFromXML\res\values-sw600dp\dimens.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\TabActivityFromXML\res\values-sw720dp-land\dimens.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\TabActivityFromXML\res\values-v11\styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\TabActivityFromXML\res\values-v14\styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\TabActivityFromXML\res\values\dimens.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\TabActivityFromXML\res\values\strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\TabActivityFromXML\res\values\styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\TabActivityFromXML\res\xml\sections.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\TabActivityFromXML\src\com\grilledmonkey\examples\tabactivityfromxml\DummySectionFragment.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\TabActivityFromXML\src\com\grilledmonkey\examples\tabactivityfromxml\MainActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\library-sherlock\.classpath" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\library-sherlock\.project" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\library-sherlock\AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\library-sherlock\libs\android-support-v4.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\library-sherlock\proguard-project.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\library-sherlock\project.properties" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\library-sherlock\res\layout\gui__activity_section_list.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\library-sherlock\res\layout\gui__activity_section_twopane.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\library-sherlock\res\values-v11\styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\library-sherlock\res\values\styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\library-sherlock\src\com\grilledmonkey\grilleduisherlock\HybridActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\library-sherlock\src\com\grilledmonkey\grilleduisherlock\SectionActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\library-sherlock\src\com\grilledmonkey\grilleduisherlock\TabActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\library-sherlock\src\com\grilledmonkey\grilleduisherlock\abstracts\GrilledActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\library-sherlock\src\com\grilledmonkey\grilleduisherlock\adapters\SectionAdapter.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\library-sherlock\src\com\grilledmonkey\grilleduisherlock\fragments\SectionListFragment.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\library-sherlock\src\com\grilledmonkey\grilleduisherlock\listener\TabChangeListener.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\library-sherlock\src\com\grilledmonkey\grilleduisherlock\xml\XmlSectionReader.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\library\.classpath" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\library\.project" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\library\.settings\org.eclipse.jdt.core.prefs" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\library\AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\library\libs\android-support-v4.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\library\proguard-project.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\library\project.properties" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\library\res\layout\gui__activity_section_detail.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\library\res\layout\gui__activity_section_list.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\library\res\layout\gui__activity_section_twopane.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\library\res\layout\gui__activity_tab.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\library\res\values-large\refs.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\library\res\values-sw600dp\refs.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\library\res\values-v11\styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\library\res\values-v14\styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\library\res\values\refs.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\library\res\values\strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\library\res\values\styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\library\src\com\grilledmonkey\grilledui\HybridActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\library\src\com\grilledmonkey\grilledui\SectionActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\library\src\com\grilledmonkey\grilledui\TabActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\library\src\com\grilledmonkey\grilledui\abstracts\GrilledActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\library\src\com\grilledmonkey\grilledui\adapters\SectionAdapter.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\library\src\com\grilledmonkey\grilledui\fragments\SectionListFragment.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\library\src\com\grilledmonkey\grilledui\listener\TabChangeListener.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\library\src\com\grilledmonkey\grilledui\xml\XmlSectionReader.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sanya\AndroidStudioProjects\grilledui\examples\TabActivityExample\TabActivityExample.iml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grilledui/gradle/wrapper/gradle-wrapper.jar" afterPath="$PROJECT_DIR$/grilledui/gradle/wrapper/gradle-wrapper.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grilledui/build/source/buildConfig/debug/com/grilledmonkey/grilledui/BuildConfig.java" afterPath="$PROJECT_DIR$/grilledui/build/source/buildConfig/debug/com/grilledmonkey/grilledui/BuildConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grilledui/build/source/buildConfig/release/com/grilledmonkey/grilledui/BuildConfig.java" afterPath="$PROJECT_DIR$/grilledui/build/source/buildConfig/release/com/grilledmonkey/grilledui/BuildConfig.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LICENSE" afterPath="$PROJECT_DIR$/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grilledui/build/source/r/debug/com/grilledmonkey/grilledui/R.java" afterPath="$PROJECT_DIR$/grilledui/build/source/r/debug/com/grilledmonkey/grilledui/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grilledui/build/source/r/release/com/grilledmonkey/grilledui/R.java" afterPath="$PROJECT_DIR$/grilledui/build/source/r/release/com/grilledmonkey/grilledui/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grilledui/build.gradle" afterPath="$PROJECT_DIR$/grilledui/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grilledui/gradle/wrapper/gradle-wrapper.properties" afterPath="$PROJECT_DIR$/grilledui/gradle/wrapper/gradle-wrapper.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradlew.bat" afterPath="$PROJECT_DIR$/gradlew.bat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grilledui/gradlew.bat" afterPath="$PROJECT_DIR$/grilledui/gradlew.bat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradlew" afterPath="$PROJECT_DIR$/gradlew" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grilledui/gradlew" afterPath="$PROJECT_DIR$/grilledui/gradlew" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grilledui/grilledui-grilledui.iml" afterPath="$PROJECT_DIR$/grilledui/grilledui-grilledui.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grilledui.iml" afterPath="$PROJECT_DIR$/grilledui.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grilledui/grilledui.iml" afterPath="$PROJECT_DIR$/grilledui/grilledui.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grilledui/build/res/all/debug/layout/gui__activity_section_detail.xml" afterPath="$PROJECT_DIR$/grilledui/build/res/all/debug/layout/gui__activity_section_detail.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grilledui/build/res/all/release/layout/gui__activity_section_detail.xml" afterPath="$PROJECT_DIR$/grilledui/build/res/all/release/layout/gui__activity_section_detail.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grilledui/build/res/all/debug/layout/gui__activity_section_list.xml" afterPath="$PROJECT_DIR$/grilledui/build/res/all/debug/layout/gui__activity_section_list.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grilledui/build/res/all/release/layout/gui__activity_section_list.xml" afterPath="$PROJECT_DIR$/grilledui/build/res/all/release/layout/gui__activity_section_list.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grilledui/build/res/all/debug/layout/gui__activity_section_twopane.xml" afterPath="$PROJECT_DIR$/grilledui/build/res/all/debug/layout/gui__activity_section_twopane.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grilledui/build/res/all/release/layout/gui__activity_section_twopane.xml" afterPath="$PROJECT_DIR$/grilledui/build/res/all/release/layout/gui__activity_section_twopane.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grilledui/build/res/all/debug/layout/gui__activity_tab.xml" afterPath="$PROJECT_DIR$/grilledui/build/res/all/debug/layout/gui__activity_tab.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grilledui/build/res/all/release/layout/gui__activity_tab.xml" afterPath="$PROJECT_DIR$/grilledui/build/res/all/release/layout/gui__activity_tab.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grilledui/project.properties" afterPath="$PROJECT_DIR$/grilledui/project.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.gradle" afterPath="$PROJECT_DIR$/settings.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_v4_19_0_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_v4_19_0_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grilledui/build/res/all/debug/values/values.xml" afterPath="$PROJECT_DIR$/grilledui/build/res/all/debug/values/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grilledui/build/res/all/debug/values-large/values.xml" afterPath="$PROJECT_DIR$/grilledui/build/res/all/debug/values-large/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grilledui/build/res/all/debug/values-sw600dp/values.xml" afterPath="$PROJECT_DIR$/grilledui/build/res/all/debug/values-sw600dp/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grilledui/build/res/all/debug/values-v11/values.xml" afterPath="$PROJECT_DIR$/grilledui/build/res/all/debug/values-v11/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grilledui/build/res/all/debug/values-v14/values.xml" afterPath="$PROJECT_DIR$/grilledui/build/res/all/debug/values-v14/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grilledui/build/res/all/release/values/values.xml" afterPath="$PROJECT_DIR$/grilledui/build/res/all/release/values/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grilledui/build/res/all/release/values-large/values.xml" afterPath="$PROJECT_DIR$/grilledui/build/res/all/release/values-large/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grilledui/build/res/all/release/values-sw600dp/values.xml" afterPath="$PROJECT_DIR$/grilledui/build/res/all/release/values-sw600dp/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grilledui/build/res/all/release/values-v11/values.xml" afterPath="$PROJECT_DIR$/grilledui/build/res/all/release/values-v11/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grilledui/build/res/all/release/values-v14/values.xml" afterPath="$PROJECT_DIR$/grilledui/build/res/all/release/values-v14/values.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="grilledui.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -289,7 +127,7 @@
       <file leaf-file-name="build.gradle" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/grilledui/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="14" selection-start="1246" selection-end="1246" vertical-scroll-proportion="0.6808874" vertical-offset="400" max-vertical-offset="986">
+            <state line="40" column="42" selection-start="1136" selection-end="1136" vertical-scroll-proportion="0.4778157" vertical-offset="400" max-vertical-offset="986">
               <folding />
             </state>
           </provider>
@@ -1023,7 +861,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1042,7 +880,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329429" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -1080,7 +918,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/settings.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="21" selection-end="21" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="119" />
+        <state line="1" column="0" selection-start="21" selection-end="21" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="119">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
@@ -1099,7 +939,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/settings.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="21" selection-end="21" vertical-scroll-proportion="0.029010238" vertical-offset="0" max-vertical-offset="586" />
+        <state line="1" column="0" selection-start="21" selection-end="21" vertical-scroll-proportion="0.029010238" vertical-offset="0" max-vertical-offset="586">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
@@ -1111,7 +953,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/grilledui/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="14" selection-start="1246" selection-end="1246" vertical-scroll-proportion="0.6808874" vertical-offset="400" max-vertical-offset="986">
+        <state line="40" column="42" selection-start="1136" selection-end="1136" vertical-scroll-proportion="0.4778157" vertical-offset="400" max-vertical-offset="986">
           <folding />
         </state>
       </provider>
