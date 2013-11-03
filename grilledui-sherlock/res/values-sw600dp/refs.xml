@@ -1,0 +1,4 @@
+<resources>
+	<item name="gui__activity_section_list" type="layout">@layout/gui__activity_section_twopane</item>
+	<item name="gui__activity_hybrid" type="layout">@layout/gui__activity_section_twopane</item>
+</resources>
